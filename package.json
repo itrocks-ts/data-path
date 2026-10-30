@@ -1,0 +1,48 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/app-dir": "latest"
+	},
+	"description": "Configurable application data directory",
+	"devDependencies": {
+		"@types/node": "^24.10",
+		"typescript": "^7.0"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"exports": {
+		".": "./cjs/data-path.js"
+	},
+	"files": [
+		"cjs",
+		"!cjs/*.map",
+		"LICENSE",
+		"README.md",
+		"docs"
+	],
+	"homepage": "https://it.rocks",
+	"keywords": [
+		"backend",
+		"configuration",
+		"directory",
+		"filesystem",
+		"it.rocks",
+		"path",
+		"storage"
+	],
+	"license": "ISC",
+	"name": "@itrocks/data-path",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/data-path.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test": "npm run build && node --test --test-isolation=none test/*.test.js"
+	},
+	"version": "0.0.2"
+}
